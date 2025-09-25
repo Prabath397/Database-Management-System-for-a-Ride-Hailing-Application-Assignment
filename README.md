@@ -107,40 +107,40 @@ The database includes essential queries for:
 
 ## 🔧 Installation & Setup
 
-Prerequisites:
+**Prerequisites:**
 
-Microsoft SQL Server (2016 or later)
+* Microsoft SQL Server (2016 or later)
 
-
-SQL Server Management Studio (SSMS)
+* SQL Server Management Studio (SSMS)
 
 
 ### Installation Steps:
 
-Create Database:
-
+**Create Database:**
+```
 sql
 
 CREATE DATABASE [CSE 4005 Prabath];
+```
 
-Execute SQL Script:
+**Execute SQL Script:**
 
-Open SSMS
+* Open SSMS
 
-Connect to your SQL Server instance
+* Connect to your SQL Server instance
 
-Open the provided script.sql file
+* Open the provided script.sql file
 
-Execute the entire script
+* Execute the entire script
 
 
 ### Verify Installation:
 
-Check that all tables are created successfully
+* Check that all tables are created successfully
 
-Verify that sample data is inserted (15 records per table)
+* Verify that sample data is inserted (15 records per table)
 
-Confirm foreign key relationships are established
+* Confirm foreign key relationships are established
 
 ## 🧪 Testing
 
@@ -148,37 +148,37 @@ Comprehensive testing conducted including:
 
 ### Test Types:
 
-Unit Testing: Individual component validation
+**1. Unit Testing:** Individual component validation
 
-Integration Testing: Cross-table relationship verification
+**2. Integration Testing:** Cross-table relationship verification
 
-Functional Testing: Business logic validation
+**3. Functional Testing:** Business logic validation
 
-Constraint Testing: Foreign key and data integrity checks
+**4. Constraint Testing:** Foreign key and data integrity checks
 
-Sample Test Cases:
+## Sample Test Cases:
 
-Insert valid driver data
+* Insert valid driver data
 
-Prevent rides with non-existing drivers
+* Prevent rides with non-existing drivers
 
-Validate payment references
+* Validate payment references
 
-Check case sensitivity on usernames
+* Check case sensitivity on usernames
 
-Verify date range filtering
+* Verify date range filtering
 
 ## 📐 ER Diagram
 
 ### The Entity Relationship Diagram illustrates:
 
-All main entities and their attributes
+* All main entities and their attributes
 
-Primary keys (underlined) and foreign key relationships
+* Primary keys (underlined) and foreign key relationships
 
-Relationship types (one-to-many, one-to-one)
+* Relationship types (one-to-many, one-to-one)
 
-Attribute data types and constraints
+* Attribute data types and constraints
 
 ## 📈 Normalization
 
@@ -186,33 +186,33 @@ The database is normalized up to 3NF (Third Normal Form):
 
 ### Normalization Process:
 
-1NF: All attributes contain atomic values
+**1NF:** All attributes contain atomic values
 
-2NF: No partial dependencies (all non-prime attributes fully dependent on primary keys)
+**2NF:** No partial dependencies (all non-prime attributes fully dependent on primary keys)
 
-3NF: No transitive dependencies (all attributes dependent only on the primary key)
+**3NF:** No transitive dependencies (all attributes dependent only on the primary key)
 
 ## 📚 Technical Documentation
 
 ### Database Specifications:
 
-Database Name: CSE 4005 Prabath
+* Database Name: CSE 4005 Prabath
 
-SQL Version: Compatible with SQL Server 2016+
+* SQL Version: Compatible with SQL Server 2016+
 
-Character Set: Default database collation
+* Character Set: Default database collation
 
-Security: Standard SQL Server authentication
+* Security: Standard SQL Server authentication
 
 ### Key Constraints:
 
-Primary keys on all main tables
+* Primary keys on all main tables
 
-Foreign key constraints for referential integrity
+* Foreign key constraints for referential integrity
 
-Appropriate data types for all attributes
+* Appropriate data types for all attributes
 
-Identity specification for auto-incrementing keys
+* Identity specification for auto-incrementing keys
 
 ---
 
